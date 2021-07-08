@@ -7,3 +7,4 @@ User: colaboradores
 password: caos
 
 path ('', Index,")
+.
