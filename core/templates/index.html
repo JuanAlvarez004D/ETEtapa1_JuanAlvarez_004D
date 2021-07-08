@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {%load static%}
+  <title>Caos News</title>
+  <link href="{% static 'img/iconcaos.png'%}" rel="shortcut icon" >
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/business-frontpage.css'%}" rel="stylesheet">
+
+  <!--Link hacia los iconos-->
+  <link href="https://use.fontawesome.com/5e22f11e35.css" media="all" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon-png">
+          <img src="{% static 'img/iconcaos.png'%}" style="width: 70px; height: 55.47px;">
+        </span>
+      </button>
+
+  <!---Icono de logo-->
+      <a class="navbar-brand" href="{% url 'Index' %}">
+        <img src="{% static 'img/iconcaos.png' %}" style="width:50px">
+      </a>
+
+ 
+
+  <!---Opciones de navegación e iconos por sección-->    
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'Index' %}">Inicio<span class="sr-only">(current)</span></a> 
+          </li>    
+          <li class="nav-item active">
+            <a class="nav-link" href="ingresar_colaborador">Ingresar Colaborador</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mostrar_colaborador">Lista de Colaboradores</a>
+          </li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <br>
+  <header class="bg-primary py-5 mb-5">
+    <div class="container">
+      <div id="carousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel1" data-slide-to="1"></li>
+        </ol>
+        <!-- diapositivas -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="news">
+              <img class="d-block w-100" src="{% static 'img/carrusel2.jpg'%}" alt="" style="width: 400; height: 400; opacity: 40%!important;">
+                <div class="carousel-caption">
+                  <h3 class="hero-text">Somos Caos News, el único medio independiente que informa con la verdad </h3>
+                </div>
+
+            </a>
+            
+          </div>
+          <div class="carousel-item">
+            <a href="news">
+              <img class="d-block w-100" src="{% static 'img/carrusel3.jpeg' %}" alt="" style="width: 400; height: 400; opacity: 40%!important;">
+              <div class="carousel-caption">
+                <h3>Integrate al equipo de Caos News, buscamos a nuevos colaboradores. POSTULA YA!</h3>
+                </div>
+            </a>  
+          </div>
+        </div>
+        <!-- botones de desplazamiento a izquierda y derecha -->      
+        <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>
+    
+  </header>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+  
+    <!---Style fondo imagen para cada jumbotron-->  
+   <style>
+    .image{
+      position: relative;
+      background: #000 url("{% static 'img/jumbo1.jpg' %}") center center;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      overflow: hidden;
+      }                            
+
+      .image-2{
+        position: relative;
+        background: #000 url("{% static 'img/jumbo2.jpg' %}") center center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+      }
+
+    </style>
+
+
+    <!--Este es el que se debe salvar (Copy paste xd)-->
+    <div class="jumbotron image" style="color:black" >
+      <h1 style="text-align: center;" >Elisa Loncón, Presidenta de la Convención Constitucional</h1> 
+      <p style="text-align: center;">Tras procesos de votación, la constituyente del pueblo mapuche fue elegida con 96 votos.</p>     
+    </div>
+
+    <!--Bío-Bío-->
+    <div class="jumbotron image-2" style="color:black"  >
+      <h1 style="text-align: center;">Caso Renacín: concejal de Maipú acusó a Cathy Barriga de millonario gasto en peluches</h1> 
+      <p style="text-align: center;">Más de $50 millones gastó la exalcaldesa en la compra de los artículos, según denunció Bladymir Muñoz.</p> 
+  </div>
+
+  </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Juan Álvarez @Copyrigth Derechos reservados.</p>
+    </div>
+    <div class="container" style="text-align: center;">
+      <h3 class="footer__title" >Síguenos</h3>
+      <div class="footer__social-networks">
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>		
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a class="a-social-networks" href="#">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+      </div>
+  </div>
+    
+ </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+
+</body>
+
+</html>

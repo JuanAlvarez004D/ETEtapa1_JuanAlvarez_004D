@@ -1,0 +1,188 @@
+body {
+    background: currentColor!important;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+@media (min-width: 992px){
+    a.navbar-brand {
+        visibility: visible!important;
+    }
+}
+
+@media (max-width: 991px){
+    a.navbar-brand {
+        visibility: hidden!important;
+    }
+}
+
+@media (max-width: 1199px){
+    .row {
+        display: flex!important;
+        flex-wrap: inherit!important;
+    }
+}
+
+@media (min-width: 701px),(max-width: 768px){
+    .row {
+        display: contents!important;
+    }
+}
+
+@media (min-width: 871px){
+    .col-xl-4 {
+    display: flex!important;
+    justify-content: space-between;
+    }
+}
+
+@media (min-width: 870px){
+    .col-xl-4 {
+    display: contents!important;
+    }
+}
+
+@media (max-width: 869px){
+    .col-xl-4 {
+    display: flex!important;
+    justify-content: center;
+    }
+}
+
+/*Nav var Iniciar Sesión*/
+
+.ini-se {
+    display: flex;
+    padding-left: 5rem;
+}
+
+@media (max-width: 991px) {
+    .ini-se {
+        padding: 0;
+        display: contents;
+    }
+}
+
+/* Fin de Iniciar Sesión*/
+
+img#myImg, img#myImg2, img#myImg3, img#myImg4, img#myImg5, img#myImg6, img#myImg7, img#myImg8, img#myImg9, img#myImg10, img#myImg11, img#myImg12 {
+    margin: 10px;
+}
+
+/* Parte de nav-menu*/
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+    background: #000000!important;
+}
+
+footer.py-5.bg-dark {
+    background: #000000!important;
+}
+
+h3.footer__title {
+    color: #ffffff;
+}
+
+h1, h2, p{
+    color: #ffffff;
+}
+
+header.bg-primary.py-5.mb-5 {
+    background: #212A34!important;
+}
+
+h1.tittle{
+    padding-top: 2rem;
+    background: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* Parte de contactenos */
+
+label{
+    color: #ffffff;
+}
+
+.form-group-1{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+button.btn.btn-danger {
+    margin-bottom: 20px;
+}
+
+.buttom-enviar {
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 620px){
+    form {
+        width: 100%;
+}
+}
+
+@media (min-width: 621px){
+    form {
+        width: 60%;
+}
+}
+
+@media (min-width: 374px),(max-width: 743px){
+.container-inside {
+    text-align: center;
+}
+}
+
+@media (min-width: 992px),(max-width: 1199px){
+    .container-inside {
+        text-align: center;
+    }
+    }
+
+    @media (min-width: 701px),(max-width: 743px){
+        .container-inside {
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        }
+
+        select#opciones {
+            width: 100%;
+        }
+
+@media (min-width: 701px),(max-width: 743.98px){
+        .container{
+            display: block;
+            justify-content: center;
+        }
+        }
+
+h1.tittle-form-registro {
+    padding-top: 3rem;
+    }
+
+
+
+/* Iniciar Sesión*/
+
+h1.ini-se\.tittle {
+    padding-block: 4rem;
+}
+
+/* Fin Inicio Sesión*/
+
+/* Footer */
+
+.a-social-networks{
+    color: #ffffff;
+}
+
